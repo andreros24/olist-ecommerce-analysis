@@ -1,4 +1,7 @@
 -- Load in this order because of the foreign keys
+-- we need a different encoding for portuguese special characters
+
+\encoding UTF8 
 
 \copy customers FROM 'data/olist_customers_dataset.csv' CSV HEADER
 \copy sellers FROM 'data/olist_sellers_dataset.csv' CSV HEADER
